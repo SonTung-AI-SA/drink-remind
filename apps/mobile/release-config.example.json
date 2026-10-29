@@ -1,0 +1,11 @@
+{
+  "SUPABASE_URL": "https://api.YOUR-DOMAIN.example",
+  "SUPABASE_ANON_KEY": "PUBLIC_PUBLISHABLE_OR_ANON_KEY_ONLY",
+  "OAUTH_PROVIDERS": "google,apple,facebook",
+  "ALLOW_LOCAL_AUTH": false,
+  "PUBLISHER_NAME": "REPLACE_WITH_LEGAL_PUBLISHER",
+  "SUPPORT_EMAIL": "support@YOUR-DOMAIN.example",
+  "PRIVACY_URL": "https://YOUR-DOMAIN.example/privacy",
+  "TERMS_URL": "https://YOUR-DOMAIN.example/terms",
+  "DELETION_URL": "https://YOUR-DOMAIN.example/delete-account"
+}

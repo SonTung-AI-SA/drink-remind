@@ -1,0 +1,24 @@
+{
+  "version": "0.1",
+  "concept": "little-island",
+  "referenceViewport": { "width": 390, "height": 844, "unit": "logical-pixel" },
+  "colors": {
+    "background": "#FAF7EE",
+    "surface": "#FFFEFA",
+    "text": "#294958",
+    "textSecondary": "#5C737D",
+    "primary": "#2987AD",
+    "onPrimary": "#FFFFFF",
+    "primarySoft": "#E9F5F6",
+    "sand": "#F3EAD3",
+    "sky": "#E6F5F9",
+    "sea": "#B5E0E7",
+    "grass": "#B0C98C",
+    "foliage": "#7CA878",
+    "petCream": "#F0C99B",
+    "petAccent": "#B78C60"
+  },
+  "typography": { "body": 16, "secondary": 14, "button": 17, "heading": 25 },
+  "navigation": { "iconSize": 28, "touchTargetMinimum": 48, "showLabels": false },
+  "icons": { "viewBox": [0, 0, 28, 28], "strokeWidth": 1.8, "color": "currentColor" }
+}

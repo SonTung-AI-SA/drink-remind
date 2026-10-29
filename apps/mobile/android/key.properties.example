@@ -1,0 +1,5 @@
+# Copy to key.properties locally; never commit passwords or keystores.
+storeFile=D:/secure-location/little-island-upload.jks
+storePassword=REPLACE_LOCALLY
+keyAlias=upload
+keyPassword=REPLACE_LOCALLY

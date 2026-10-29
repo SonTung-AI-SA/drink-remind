@@ -1,0 +1,44 @@
+workflows:
+  ios-sideload-unsigned:
+    name: iOS IPA for Sideloadly (unsigned)
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    working_directory: apps/mobile
+    environment:
+      flutter: 3.47.8
+      xcode: latest
+      cocoapods: default
+    cache:
+      cache_paths:
+        - $HOME/.pub-cache
+    scripts:
+      - name: Resolve locked Flutter dependencies
+        script: |
+          set -euo pipefail
+          flutter --version
+          flutter pub get --enforce-lockfile
+      - name: Analyze and test
+        script: |
+          set -euo pipefail
+          flutter analyze --no-pub
+          flutter test --no-pub test/app_flow_test.dart test/database_migration_test.dart test/domain_test.dart test/pets_test.dart test/pet_scene_test.dart test/daily_reward_test.dart test/repository_test.dart test/water_suggestion_test.dart test/widget_test.dart
+      - name: Build release app for physical iPhone without signing
+        script: |
+          set -euo pipefail
+          flutter build ios --release --no-codesign --no-pub --build-number="${BUILD_NUMBER}"
+      - name: Package unsigned IPA for Sideloadly
+        script: |
+          set -euo pipefail
+          test -d build/ios/iphoneos/Runner.app
+          package_dir="$CM_BUILD_DIR/artifacts/ios-sideload"
+          mkdir -p "$package_dir/Payload"
+          ditto build/ios/iphoneos/Runner.app "$package_dir/Payload/Runner.app"
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$package_dir/Payload/Runner.app/Info.plist"
+          cd "$package_dir"
+          /usr/bin/zip -qry LittleIsland-unsigned.ipa Payload
+          /usr/bin/unzip -t LittleIsland-unsigned.ipa
+          shasum -a 256 LittleIsland-unsigned.ipa > LittleIsland-unsigned.ipa.sha256
+    artifacts:
+      - $CM_BUILD_DIR/artifacts/ios-sideload/LittleIsland-unsigned.ipa
+      - $CM_BUILD_DIR/artifacts/ios-sideload/LittleIsland-unsigned.ipa.sha256
+      - /tmp/xcodebuild_logs/*.log

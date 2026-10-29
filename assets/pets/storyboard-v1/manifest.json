@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "status": "key-pose artwork; not integrated",
+  "reference": "approved storyboard v1; orange cat v1",
+  "posesPerPet": 12,
+  "totalPoses": 36,
+  "timingSeconds": {
+    "tap": 2,
+    "idle": 5,
+    "goal": 6,
+    "drink": 3
+  },
+  "note": "Grid is a visual ordering guide. Cell crop boundaries and pivots require manual calibration; props may cross nominal divisions. No runtime atlas coordinates provided.",
+  "pets": [
+    {
+      "id": "nemo",
+      "file": "nemo-keyposes.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "layout": {
+        "columns": 3,
+        "rows": 4
+      },
+      "rows": [
+        "idle",
+        "tap",
+        "drink",
+        "goal"
+      ],
+      "columns": [
+        "start",
+        "peak",
+        "settle"
+      ],
+      "readyForDirectPlayback": false
+    },
+    {
+      "id": "corgi",
+      "file": "corgi-keyposes.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": "Format32bppArgb",
+      "cornerAlpha": 1,
+      "layout": {
+        "columns": 3,
+        "rows": 4
+      },
+      "rows": [
+        "idle",
+        "tap",
+        "drink",
+        "goal"
+      ],
+      "columns": [
+        "start",
+        "peak",
+        "settle"
+      ],
+      "readyForDirectPlayback": false
+    },
+    {
+      "id": "meo-cam",
+      "file": "meo-cam-keyposes.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "layout": {
+        "columns": 3,
+        "rows": 4
+      },
+      "rows": [
+        "idle",
+        "tap",
+        "drink",
+        "goal"
+      ],
+      "columns": [
+        "start",
+        "peak",
+        "settle"
+      ],
+      "readyForDirectPlayback": false
+    }
+  ]
+}

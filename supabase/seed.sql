@@ -1,0 +1,1 @@
+-- Local development intentionally starts without user accounts or demo health data.

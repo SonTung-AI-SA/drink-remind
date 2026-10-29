@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "status": "artwork-only; not integrated",
+  "generator": "built-in image generation",
+  "assets": [
+    {
+      "file": "corgi-confetti-fx.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "centerAlpha": 0,
+      "sampledTransparentPixels": 5465,
+      "sampledVisiblePixels": 776
+    },
+    {
+      "file": "corgi-scarf.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "centerAlpha": 253,
+      "sampledTransparentPixels": 4094,
+      "sampledVisiblePixels": 2050
+    },
+    {
+      "file": "meo-cam-badge.png",
+      "width": 1536,
+      "height": 1024,
+      "format": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "centerAlpha": 253,
+      "sampledTransparentPixels": 4691,
+      "sampledVisiblePixels": 1453
+    },
+    {
+      "file": "meo-cam-stars-fx.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "centerAlpha": 0,
+      "sampledTransparentPixels": 3712,
+      "sampledVisiblePixels": 2529
+    },
+    {
+      "file": "nemo-bubbles-fx.png",
+      "width": 1254,
+      "height": 1254,
+      "format": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "centerAlpha": 0,
+      "sampledTransparentPixels": 4570,
+      "sampledVisiblePixels": 1671
+    },
+    {
+      "file": "nemo-crown.png",
+      "width": 1402,
+      "height": 1122,
+      "format": "Format32bppArgb",
+      "cornerAlpha": 0,
+      "centerAlpha": 253,
+      "sampledTransparentPixels": 4531,
+      "sampledVisiblePixels": 1717
+    }
+  ]
+}

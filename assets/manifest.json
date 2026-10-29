@@ -1,0 +1,146 @@
+{
+  "version": "0.2",
+  "codeAssets": ["branding/app-icon.svg", "../apps/mobile/lib/features/pets/presentation/pet_avatar.dart"],
+  "appAnimationStatus": "finite-reactions-and-three-growth-stages",
+  "concept": "little-island",
+  "generation": "built-in-imagegen",
+  "animationStatus": "static-state-atlases-not-frame-animations",
+  "images": [
+    {
+      "path": "backgrounds/sky-sea.png",
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "cornerAlpha": 255
+    },
+    {
+      "path": "island/island-base.png",
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": true,
+      "cornerAlpha": 0
+    },
+    {
+      "path": "pets/mochi-states.png",
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": true,
+      "cornerAlpha": 0,
+      "columns": 3,
+      "rows": 2,
+      "frames": [
+        {
+          "name": "idle",
+          "x": 0,
+          "y": 0.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "sleep",
+          "x": 512,
+          "y": 0.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "happy",
+          "x": 1024,
+          "y": 0.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "eat",
+          "x": 0,
+          "y": 512.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "play",
+          "x": 512,
+          "y": 512.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "jump",
+          "x": 1024,
+          "y": 512.0,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "path": "decorations/island-props.png",
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": true,
+      "cornerAlpha": 0,
+      "columns": 3,
+      "rows": 2,
+      "frames": [
+        {
+          "name": "tree",
+          "x": 0,
+          "y": 0.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "cottage",
+          "x": 512,
+          "y": 0.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "bowl",
+          "x": 1024,
+          "y": 0.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "flowers",
+          "x": 0,
+          "y": 512.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "seedling",
+          "x": 512,
+          "y": 512.0,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "rocks-grass",
+          "x": 1024,
+          "y": 512.0,
+          "width": 512,
+          "height": 512
+        }
+      ]
+    }
+  ],
+  "icons": [
+    "island",
+    "journey",
+    "profile",
+    "water-drop",
+    "bell",
+    "plus"
+  ],
+  "layerOrder": [
+    "background",
+    "terrain",
+    "rear-props",
+    "pet",
+    "front-props",
+    "ui"
+  ]
+}
