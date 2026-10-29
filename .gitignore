@@ -1,4 +1,5 @@
 .tools/
+/output/
 .dart_tool/
 **/.dart_tool/
 **/build/
